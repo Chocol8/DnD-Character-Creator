@@ -3,8 +3,6 @@ DnD Character Creator created as a requirement for the course Applications Devel
 
 
 ## Team Members:
-```
-**Project Lead:** Michael James Castillo
-**Frontend Developers:** Zedrick James Barcellano, Vince Joshua Vindua
-**Backend Developer:** Kurt Lucas
-```
+- **Project Lead:** Michael James Castillo
+- **Frontend Developers:** Zedrick James Barcellano, Vince Joshua Vindua
+- **Backend Developer:** Kurt Lucas
