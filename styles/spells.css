@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+html{
+  height:100%;
+}
+
+
+body{
+  background-color:rgba(36, 36, 36, 1);
+  height:100%;
+  overflow-x: hidden;
+  
+}
+
+input, select{
+  width: 150px;
+  
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  padding:4px;
+  
+  background-color: rgba(36, 36, 36, 1);
+  outline-width: 0;
+  color:#888888;
+}
+
+label{
+  color:#aaaaaa;
+  font-size: 15px;
+}
+
+.textarea1{
+  border-style: groove;
+  background-color: rgba(36, 36, 36, 1);
+  outline-width: 2px;
+  color:#888888;
+  background-color: rgb(51, 51, 51);
+  resize: none;
+  /* width:585px;
+  height:365px; */
+  margin-left:5px;
+  margin-top:5px;
+  width:90%;
+}
+
+input:hover, select:hover textarea:hover{
+  background-color: rgb(53, 53, 53);
+  cursor:grab;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: red;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: blue;
+  color: black;
+}
+
+.header{
+	width: 100%;
+	border: 3px solid rgb(141, 141, 141);
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30.16%;
+  padding: 9.7px;
+  /* height: 20%; Should be removed. Only for demonstration */
+  border: 1px solid rgb(141, 141, 141);
+  position:relative;
+  margin-bottom:1px;
+}
+
+.column2 {
+  float: left;
+  width: 29%;
+  padding: 9.7px;
+  /* height: 20%; Should be removed. Only for demonstration */
+  border: 3px solid rgb(141, 141, 141);
+  border-radius: 7px;
+  /* float:right; */
+  position: relative;
+  /* top: 25px; */
+  /* left:64px; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  float:right;
+}
+
+.text{
+	width:90%;
+}
+
+.butt{
+  position:relative;
+  /* left:80px; */
+}
+
+.cont{
+  width:100%;
+  margin-left:17px;
+  height:800px;
+}
+
+.maxin{
+  height:0px;
+}
+
+button{
+  background-color:rgba(36, 36, 36, 1);;
+  border: none;
+  width: 100px;
+  height:50px;
+  font-size: 20px;
+  
+  border:3px solid rgb(141, 141, 141);
+  border-radius: 7px;
+  /* padding:7px; */
+
+  background-color: rgba(36, 36, 36, 1);
+  outline-width: 0;
+  color:#888888;
+  
+  position:relative;
+  top:10px;
+  left:20px;
+  text-align: center;
+}
+
+button:hover{
+  background-color: rgb(65, 65, 65);
+  transform:translateY(-4px);
+}
+
+button:active{
+  transform:translateY(4px);
+  background-color: rgb(54, 54, 54);
+}
+
+.sub{
+  position:absolute;
+  top:870px;
+  left:90px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidebar-navigation {
+  display: inline-block;
+  height: 140%;
+  width: 80px;
+  background-color: #494949;
+  float:left;
+}
+.sidebar-navigation ul {
+  text-align: center;
+  color: white;
+}
+.sidebar-navigation ul li {
+  padding: 28px 0;
+  cursor: pointer;
+  transition: all ease-out 120ms;
+}
+.sidebar-navigation ul li i {
+  display: block;
+  font-size: 24px;
+  transition: all ease 450ms;
+}
+.sidebar-navigation ul li .tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: #494949;
+  padding: 8px 15px;
+  border-radius: 3px;
+  margin-top: -26px;
+  left: 90px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  z-index:999;
+}
+.sidebar-navigation ul li .tooltip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+.sidebar-navigation ul li:hover {
+  background-color: #242424;
+}
+.sidebar-navigation ul li:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+/* .sidebar-navigation ul li.active {
+  background-color: #242424;
+}
+.sidebar-navigation ul li.active i {
+  color: #2b2b2b;
+} */

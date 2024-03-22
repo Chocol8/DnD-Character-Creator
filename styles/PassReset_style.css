@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+html, body{
+    height:100%;
+}
+
+@font-face{
+    font-family: made evolve sans;
+    src:url(https://www.dafont.com/made-evolve-sans.font);
+}
+
+.c-wrap{
+    width:17%;
+    height:120%;
+    padding:5%;
+    padding-top:50%;
+    border-radius: 18px;
+    background-color:rgba(36, 36, 36, 1);
+    
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+    /* display:flex; */
+}
+
+input{
+    width:100%;
+    
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    padding:7px;
+    
+    background-color: rgba(36, 36, 36, 1);
+    outline-width: 0;
+    color:#888888;
+}
+
+input:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+input:focus{
+    background-color: rgb(53, 53, 53);
+}
+
+.imageL{
+    position:absolute;
+    left:0;
+    top:0;
+    background-image:url(../images/DnD5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 115%;
+    white-space: nowrap;
+    
+    height:100%;
+    width:50%;
+    
+    flex:1;
+}
+
+.imageR{
+    position:absolute;
+    right:0;
+    top:0;
+    background-image:url(../images/DnD6.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    height:100%;
+    width:50%;
+    
+    transform: scale(-1, 1);
+    flex:1;
+}
+
+button{
+    border:none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:42px;
+    padding-right:42px;
+    background-color: #E61B23;
+    display:inline-block;
+    
+    font-family: sans-serif;
+    font-size:24px;
+    color:#242424;
+    
+    cursor: pointer;
+    outline:none;
+    border-radius: 4px;
+}
+
+button:active{
+    transform:translateY(4px);
+    background-color: rgb(209, 0, 0);
+}
+
+button:hover{
+    background-color: rgb(209, 0, 0);
+}
+
+.butt1{
+    margin-left:20px;
+    margin-right:10px;
+    margin-top:20px;
+    
+    /* padding:20px; */
+    
+    /* padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:42px;
+    padding-right:42px; */
+}
+
+.butt2{
+    margin-left:20px;
+    margin-right:10px;
+    margin-top:20px;
+    
+    /* padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:42px;
+    padding-right:42px; */
+}
+
+body{
+    overflow: hidden;
+}
+
+.logo{
+    position:absolute;
+    top:160px;
+    left:120px;
+    
+}
+
+.error{
+    position:relative;
+    left:-40px;
+}
